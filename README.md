@@ -7,7 +7,7 @@ Mean Reversion: Bands [0.05–0.15] and [0.85–0.95]. Guards: TTR > 60s, trend_
 
 Liquidation Breakout: overrides the regime in the last 90 seconds, gives a higher score, and holds for a shorter time
 
-Achieved an average of 1% profit over 10-minute windows (after fees and slippage)
+Achieved an average of 1.78% profit over 10-minute windows (after fees and slippage)
 
 # polymarket-btc-takehome
 
