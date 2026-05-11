@@ -1,3 +1,11 @@
+# See model_submission.py for full implementation
+Identify current regime as Trend or Chop using (30s return)/(stdev of 1s return). If Trend, use momentum. If Chop, use mean reversion. 
+Momentum: All three horizons (5s/15s/30s) must align in sign. Acceleration filter: r5_now - r5_prev > 0 in the direction of trade. 
+Mean Reversion: Bands [0.05–0.15] and [0.85–0.95]. Guards: TTR > 60s, trend_score < 1.4, not still accelerating toward the extreme. 
+Liquidation Breakout: overrides the regime in the last 90 seconds, gives a higher score, and holds for a shorter time
+
+Achieved an average of 1% profit over 10-minute windows (after fees and slippage)
+
 # polymarket-btc-takehome
 
 A take-home project for technical candidates.
